@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130828154228) do
+ActiveRecord::Schema.define(version: 20130828160341) do
 
   create_table "burritos", force: true do |t|
     t.string   "location"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20130828154228) do
     t.decimal  "environment_rating", precision: 2, scale: 1
     t.decimal  "post_eating_rating", precision: 2, scale: 1
     t.boolean  "chips"
-    t.decimal  "overall_rating",     precision: 2, scale: 1
+    t.decimal  "overall_rating",     precision: 4, scale: 1
     t.string   "notes"
     t.string   "keywords"
     t.datetime "created_at"
