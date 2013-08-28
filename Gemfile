@@ -5,7 +5,10 @@ ruby '1.9.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-gem 'pg'
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
