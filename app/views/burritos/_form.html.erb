@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :price %><br>
-    <%= f.number_field :price %>
+    <%= f.number_field :price, :in => 0..100, :step => 0.01 %>
   </div>
   <div class="field">
     <%= f.label :meat_type %><br>
@@ -41,43 +41,43 @@
   </div>
   <div class="field">
     <%= f.label :meat_rating %><br>
-    <%= f.number_field :meat_rating %>
+    <%= f.number_field :meat_rating, :in => 0..10, :step => 0.1 %>
   </div>
   <div class="field">
     <%= f.label :size_rating %><br>
-    <%= f.number_field :size_rating %>
+    <%= f.number_field :size_rating, :in => 0..10, :step => 0.1 %>
   </div>
   <div class="field">
     <%= f.label :tortilla_rating %><br>
-    <%= f.number_field :tortilla_rating %>
+    <%= f.number_field :tortilla_rating, :in => 0..10, :step => 0.1 %>
   </div>
   <div class="field">
     <%= f.label :salsa_rating %><br>
-    <%= f.number_field :salsa_rating %>
+    <%= f.number_field :salsa_rating, :in => 0..10, :step => 0.1 %>
   </div>
   <div class="field">
     <%= f.label :other_rating %><br>
-    <%= f.number_field :other_rating %>
+    <%= f.number_field :other_rating, :in => 0..10, :step => 0.1 %>
   </div>
   <div class="field">
     <%= f.label :flavor_rating %><br>
-    <%= f.number_field :flavor_rating %>
+    <%= f.number_field :flavor_rating, :in => 0..10, :step => 0.1 %>
   </div>
   <div class="field">
     <%= f.label :service_rating %><br>
-    <%= f.number_field :service_rating %>
+    <%= f.number_field :service_rating, :in => 0..10, :step => 0.1 %>
   </div>
   <div class="field">
     <%= f.label :selection_rating %><br>
-    <%= f.number_field :selection_rating %>
+    <%= f.number_field :selection_rating, :in => 0..10, :step => 0.1 %>
   </div>
   <div class="field">
     <%= f.label :environment_rating %><br>
-    <%= f.number_field :environment_rating %>
+    <%= f.number_field :environment_rating, :in => 0..10, :step => 0.1 %>
   </div>
   <div class="field">
     <%= f.label :post_eating_rating %><br>
-    <%= f.number_field :post_eating_rating %>
+    <%= f.number_field :post_eating_rating, :in => 0..10, :step => 0.1 %>
   </div>
   <div class="field">
     <%= f.label :chips %><br>
@@ -85,7 +85,7 @@
   </div>
   <div class="field">
     <%= f.label :overall_rating %><br>
-    <%= f.number_field :overall_rating %>
+    <%= f.number_field :overall_rating, :in => 0..10, :step => 0.1 %>
   </div>
   <div class="field">
     <%= f.label :notes %><br>

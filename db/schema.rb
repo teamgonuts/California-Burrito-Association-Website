@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130828134336) do
+ActiveRecord::Schema.define(version: 20130828154228) do
 
   create_table "burritos", force: true do |t|
     t.string   "location"
@@ -19,20 +19,20 @@ ActiveRecord::Schema.define(version: 20130828134336) do
     t.string   "taqueria_name"
     t.string   "website"
     t.string   "phone"
-    t.integer  "price"
+    t.decimal  "price",              precision: 4, scale: 2
     t.string   "meat_type"
-    t.integer  "meat_rating"
-    t.integer  "size_rating"
-    t.integer  "tortilla_rating"
-    t.integer  "salsa_rating"
-    t.integer  "other_rating"
-    t.integer  "flavor_rating"
-    t.integer  "service_rating"
-    t.integer  "selection_rating"
-    t.integer  "environment_rating"
-    t.integer  "post_eating_rating"
+    t.decimal  "meat_rating",        precision: 2, scale: 1
+    t.decimal  "size_rating",        precision: 2, scale: 1
+    t.decimal  "tortilla_rating",    precision: 2, scale: 1
+    t.decimal  "salsa_rating",       precision: 2, scale: 1
+    t.decimal  "other_rating",       precision: 2, scale: 1
+    t.decimal  "flavor_rating",      precision: 2, scale: 1
+    t.decimal  "service_rating",     precision: 2, scale: 1
+    t.decimal  "selection_rating",   precision: 2, scale: 1
+    t.decimal  "environment_rating", precision: 2, scale: 1
+    t.decimal  "post_eating_rating", precision: 2, scale: 1
     t.boolean  "chips"
-    t.integer  "overall_rating"
+    t.decimal  "overall_rating",     precision: 2, scale: 1
     t.string   "notes"
     t.string   "keywords"
     t.datetime "created_at"
