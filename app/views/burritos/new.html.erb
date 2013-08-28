@@ -1,0 +1,39 @@
+<% if !flash[:notice].blank? %>
+  <div class="notice"> 
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+<br/>
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<div class="burrito new">
+  <h2>New Burrito</h2>
+
+  <%= form_for(:new_burrito, :url => {:action => 'create'}) do |f| %>
+  
+    <table summary="Burrito form fields">
+      <tr>
+        <th><%= f.label(:taqueria_name, 'Taqueria Name') %></th>
+        <td><%= f.text_field(:taqueria_name) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:burrito_name, 'Burrito Name') %></th>
+        <td><%= f.text_field(:burrito_name) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:location, 'Address') %></th>
+        <td><%= f.text_field(:location) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:website, 'Website') %></th>
+        <td><%= f.text_field(:website) %></td>
+      </tr>
+    </table>
+    
+    <div class="form-buttons">
+      <%= submit_tag("Shorten Url") %>
+    </div>
+    
+  <% end %>
+</div>
+<%= link_to 'Back', burritos_path %>

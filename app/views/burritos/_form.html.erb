@@ -1,0 +1,101 @@
+<%= form_for(@burrito) do |f| %>
+  <% if @burrito.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@burrito.errors.count, "error") %> prohibited this burrito from being saved:</h2>
+
+      <ul>
+      <% @burrito.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :burrito_name %><br>
+    <%= f.text_field :burrito_name %>
+  </div>
+  <div class="field">
+    <%= f.label :taqueria_name %><br>
+    <%= f.text_field :taqueria_name %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br>
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :meat_type %><br>
+    <%= f.text_field :meat_type %>
+  </div>
+  <div class="field">
+    <%= f.label :meat_rating %><br>
+    <%= f.number_field :meat_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :size_rating %><br>
+    <%= f.number_field :size_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :tortilla_rating %><br>
+    <%= f.number_field :tortilla_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :salsa_rating %><br>
+    <%= f.number_field :salsa_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :other_rating %><br>
+    <%= f.number_field :other_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :flavor_rating %><br>
+    <%= f.number_field :flavor_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :service_rating %><br>
+    <%= f.number_field :service_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :selection_rating %><br>
+    <%= f.number_field :selection_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :environment_rating %><br>
+    <%= f.number_field :environment_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :post_eating_rating %><br>
+    <%= f.number_field :post_eating_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :chips %><br>
+    <%= f.check_box :chips %>
+  </div>
+  <div class="field">
+    <%= f.label :overall_rating %><br>
+    <%= f.number_field :overall_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_field :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :keywords %><br>
+    <%= f.text_field :keywords %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

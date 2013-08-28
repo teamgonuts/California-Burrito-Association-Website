@@ -1,0 +1,67 @@
+<h1>Listing burritos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Burrito name</th>
+      <th>Taqueria name</th>
+      <th>Website</th>
+      <th>Phone</th>
+      <th>Price</th>
+      <th>Meat type</th>
+      <th>Meat rating</th>
+      <th>Size rating</th>
+      <th>Tortilla rating</th>
+      <th>Salsa rating</th>
+      <th>Other rating</th>
+      <th>Flavor rating</th>
+      <th>Service rating</th>
+      <th>Selection rating</th>
+      <th>Environment rating</th>
+      <th>Post eating rating</th>
+      <th>Chips</th>
+      <th>Overall rating</th>
+      <th>Notes</th>
+      <th>Keywords</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @burritos.each do |burrito| %>
+      <tr>
+        <td><%= burrito.location %></td>
+        <td><%= burrito.burrito_name %></td>
+        <td><%= burrito.taqueria_name %></td>
+        <td><%= burrito.website %></td>
+        <td><%= burrito.phone %></td>
+        <td><%= burrito.price %></td>
+        <td><%= burrito.meat_type %></td>
+        <td><%= burrito.meat_rating %></td>
+        <td><%= burrito.size_rating %></td>
+        <td><%= burrito.tortilla_rating %></td>
+        <td><%= burrito.salsa_rating %></td>
+        <td><%= burrito.other_rating %></td>
+        <td><%= burrito.flavor_rating %></td>
+        <td><%= burrito.service_rating %></td>
+        <td><%= burrito.selection_rating %></td>
+        <td><%= burrito.environment_rating %></td>
+        <td><%= burrito.post_eating_rating %></td>
+        <td><%= burrito.chips %></td>
+        <td><%= burrito.overall_rating %></td>
+        <td><%= burrito.notes %></td>
+        <td><%= burrito.keywords %></td>
+        <td><%= link_to 'Show', burrito %></td>
+        <td><%= link_to 'Edit', edit_burrito_path(burrito) %></td>
+        <td><%= link_to 'Destroy', burrito, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Burrito', new_burrito_path %>

@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  location: MyString
+  burrito_name: MyString
+  taqueria_name: MyString
+  website: MyString
+  phone: MyString
+  price: 1
+  meat_type: MyString
+  meat_rating: 1
+  size_rating: 1
+  tortilla_rating: 1
+  salsa_rating: 1
+  other_rating: 1
+  flavor_rating: 1
+  service_rating: 1
+  selection_rating: 1
+  environment_rating: 1
+  post_eating_rating: 1
+  chips: false
+  overall_rating: 1
+  notes: MyString
+  keywords: MyString
+
+two:
+  location: MyString
+  burrito_name: MyString
+  taqueria_name: MyString
+  website: MyString
+  phone: MyString
+  price: 1
+  meat_type: MyString
+  meat_rating: 1
+  size_rating: 1
+  tortilla_rating: 1
+  salsa_rating: 1
+  other_rating: 1
+  flavor_rating: 1
+  service_rating: 1
+  selection_rating: 1
+  environment_rating: 1
+  post_eating_rating: 1
+  chips: false
+  overall_rating: 1
+  notes: MyString
+  keywords: MyString
